@@ -1,5 +1,5 @@
 resource "aws_instance" "Wordpress"{
   ami = "ami-e8504b8c"
   instance_type = "t2.micro"
-  availability_zone = "eu-west-1a"
+  availability_zone = "eu-west-2"
 }
