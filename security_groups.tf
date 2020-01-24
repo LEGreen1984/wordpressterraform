@@ -1,5 +1,6 @@
 resource "aws_security_group" "web" {
   name = "vpc_webserver"
+  vpc_id = "${aws_vpc.wordpress-main.id}"
 
   ingress {
     from_port   = 443
@@ -14,4 +15,3 @@ resource "aws_security_group" "web" {
     cidr_blocks = ["0.0.0.0/16"]
   }
 }
-
